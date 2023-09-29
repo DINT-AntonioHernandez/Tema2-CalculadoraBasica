@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tema2_CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="_8Button" Tag="" Content="8" HorizontalAlignment="Left" Margin="384,144,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_7Button" Tag="" Content="7" HorizontalAlignment="Left" Margin="321,144,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_9Button" Tag="" Content="9" HorizontalAlignment="Left" Margin="442,144,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_5Button" Tag="" Content="5" HorizontalAlignment="Left" Margin="384,202,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_4Button" Tag="" Content="4" HorizontalAlignment="Left" Margin="321,202,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_6Button" Tag="" Content="6" HorizontalAlignment="Left" Margin="442,202,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_2Button" Tag="" Content="2" HorizontalAlignment="Left" Margin="384,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_1Button" Tag="" Content="1" HorizontalAlignment="Left" Margin="321,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_3Button" Tag="" Content="3" HorizontalAlignment="Left" Margin="442,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="_0Button" Tag="" Content="0" HorizontalAlignment="Left" Margin="384,317,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
+        <Button x:Name="sumButton" Content="+" HorizontalAlignment="Left" Margin="541,144,0,0" VerticalAlignment="Top" Height="36" Width="36" RenderTransformOrigin="1.361,2.14"/>
+        <Button x:Name="minusButton" Content="-" HorizontalAlignment="Left" Margin="541,202,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
+        <Button x:Name="multButton" Content="*" HorizontalAlignment="Left" Margin="541,262,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
+        <Button x:Name="divisionButton" Content="/" HorizontalAlignment="Left" Margin="601,262,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
+        <TextBox x:Name="salidaTextBox" HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="27" IsEnabled="False"/>
+
+    </Grid>
+</Window>
