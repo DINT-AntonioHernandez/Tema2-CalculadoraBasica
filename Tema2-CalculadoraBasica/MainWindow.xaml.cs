@@ -23,6 +23,8 @@ namespace Tema2_CalculadoraBasica
         int primerNum = 0;
         int secunNum = 0;
 
+        char operador = '+';
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,8 +35,64 @@ namespace Tema2_CalculadoraBasica
             Button btn = (Button)sender;
             string valor = btn.Content.ToString();
 
+            salidaTextBox.Text = salidaTextBox.Text+valor;
+        }
+
+
+
+        private void divisionButton_Copiar_Click(object sender, RoutedEventArgs e)
+        {
+            int resultado = 0;
+            switch (operador)
+            {
+                case '+':
+                    resultado =  primerNum + int.Parse(salidaTextBox.Text);
+                    break;
+                case '-':
+                    resultado = primerNum- int.Parse(salidaTextBox.Text);
+                    break;
+                case '*':
+                    resultado = primerNum * int.Parse(salidaTextBox.Text);
+                    break;
+                case '/':
+                    resultado = primerNum / int.Parse(salidaTextBox.Text);
+                    break;
+            }
+
+            salidaTextBox.Text = $"{resultado}";
+        }
+
+        private void sumButton_Click(object sender, RoutedEventArgs e)
+        {
+            primerNum = int.Parse(salidaTextBox.Text);
+            operador = '+';
             salidaTextBox.Text = "";
-            salidaTextBox.Text = valor + salidaTextBox.Text;
+        }
+
+        private void minusButton_Click(object sender, RoutedEventArgs e)
+        {
+            primerNum = int.Parse(salidaTextBox.Text);
+            operador = '-';
+            salidaTextBox.Text = "";
+        }
+
+        private void multButton_Click(object sender, RoutedEventArgs e)
+        {
+            primerNum = int.Parse(salidaTextBox.Text);
+            operador = '*';
+            salidaTextBox.Text = "";
+        }
+
+        private void divisionButton_Click(object sender, RoutedEventArgs e)
+        {
+            primerNum = int.Parse(salidaTextBox.Text);
+            operador = '/';
+            salidaTextBox.Text = "";
+        }
+
+        private void delButton_Click(object sender, RoutedEventArgs e)
+        {
+            salidaTextBox.Text = "";
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_CalculadoraBasica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculadora" Height="450" Width="800">
     <Grid>
         <Button x:Name="_8Button" Tag="" Content="8" HorizontalAlignment="Left" Margin="384,144,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
         <Button x:Name="_7Button" Tag="" Content="7" HorizontalAlignment="Left" Margin="321,144,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
@@ -17,11 +17,13 @@
         <Button x:Name="_1Button" Tag="" Content="1" HorizontalAlignment="Left" Margin="321,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
         <Button x:Name="_3Button" Tag="" Content="3" HorizontalAlignment="Left" Margin="442,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
         <Button x:Name="_0Button" Tag="" Content="0" HorizontalAlignment="Left" Margin="384,317,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="Button_Click"/>
-        <Button x:Name="sumButton" Content="+" HorizontalAlignment="Left" Margin="541,144,0,0" VerticalAlignment="Top" Height="36" Width="36" RenderTransformOrigin="1.361,2.14"/>
-        <Button x:Name="minusButton" Content="-" HorizontalAlignment="Left" Margin="541,202,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
-        <Button x:Name="multButton" Content="*" HorizontalAlignment="Left" Margin="541,262,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
-        <Button x:Name="divisionButton" Content="/" HorizontalAlignment="Left" Margin="601,262,0,0" VerticalAlignment="Top" Height="36" Width="36"/>
+        <Button x:Name="sumButton" Content="+" HorizontalAlignment="Left" Margin="544,147,0,0" VerticalAlignment="Top" Height="36" Width="36" RenderTransformOrigin="1.361,2.14" Click="sumButton_Click"/>
+        <Button x:Name="minusButton" Content="-" HorizontalAlignment="Left" Margin="604,147,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="minusButton_Click"/>
+        <Button x:Name="multButton" Content="*" HorizontalAlignment="Left" Margin="544,207,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="multButton_Click"/>
+        <Button x:Name="divisionButton" Content="/" HorizontalAlignment="Left" Margin="604,207,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="divisionButton_Click"/>
         <TextBox x:Name="salidaTextBox" HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="27" IsEnabled="False"/>
+        <Button x:Name="resultadoButton" Content="=" HorizontalAlignment="Left" Margin="544,262,0,0" VerticalAlignment="Top" Height="36" Width="36" Click="divisionButton_Copiar_Click"/>
+        <Button x:Name="borrarButton" Content="del" HorizontalAlignment="Left" Margin="483,98,0,0" VerticalAlignment="Top" Height="27" Width="25" RenderTransformOrigin="1.361,2.14" Click="delButton_Click"/>
 
     </Grid>
 </Window>
